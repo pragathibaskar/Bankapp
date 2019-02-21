@@ -16,6 +16,12 @@ public class Controller {
 	@Autowired
 	IService service;
 	
+	@GetMapping("/get")
+       String send()
+       {
+	return "This is simple banking application";
+	   
+       }
 	@PostMapping("/post")
 	Account create(@RequestBody Account a)
 	{
